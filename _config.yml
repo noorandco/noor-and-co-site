@@ -1,18 +1,29 @@
 title: "Noor & Co."
 description: "Leather jackets, leather goods and custom manufacturing enquiries from Srinagar, Jammu & Kashmir, India."
-url: "https://YOUR-GITHUB-USERNAME.github.io"
+url: "https://noorandco.github.io"
 baseurl: ""
 lang: "en"
 timezone: "Asia/Kolkata"
+
 markdown: kramdown
 permalink: /blog/:title/
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-google_analytics_id: ""
+
+google_analytics_id: "G-D70RF3ZXRS"
 google_site_verification: ""
 google_form_url: ""
 google_form_embed_url: ""
-whatsapp_number: ""
-email: ""
-exclude: [README.md, Gemfile, automation, .github, vendor, _site]
+
+whatsapp_number: "919149552561"
+email: "noorandco2001@gmail.com"
+
+exclude:
+  - README.md
+  - Gemfile
+  - automation
+  - .github
+  - vendor
+  - _site
