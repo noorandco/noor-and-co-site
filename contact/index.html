@@ -1,0 +1,10 @@
+---
+layout: page
+title: "Contact Noor & Co."
+heading: "Tell us what you have in mind."
+kicker: "CONTACT & ENQUIRIES"
+description: "Contact Noor & Co. for leather jackets, custom manufacturing, wholesale and private-label enquiries."
+intro: "Share a few details so we can understand your product or manufacturing requirements."
+permalink: /contact/
+---
+<div class="contact-grid"><div><h2>Make your enquiry useful.</h2><p>Include product type, quantity, destination country and any reference photos or specifications.</p>{% if site.email != "" %}<p><b>Email</b><br><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>{% endif %}{% if site.whatsapp_number != "" %}<p><b>WhatsApp</b><br><a href="https://wa.me/{{ site.whatsapp_number | escape }}">Message Noor &amp; Co. ↗</a></p>{% endif %}{% if site.google_form_url != "" %}<a class="button dark" href="{{ site.google_form_url | escape }}" target="_blank" rel="noopener">Open enquiry form ↗</a>{% endif %}</div><div class="formbox"><p class="eyebrow">PRODUCT · WHOLESALE · PRIVATE LABEL</p><h2>Send your brief</h2>{% if site.google_form_embed_url != "" %}<iframe src="{{ site.google_form_embed_url | escape }}" title="Noor & Co. enquiry form" width="100%" height="720"></iframe>{% elsif site.google_form_url != "" %}<p>Your enquiry form is ready.</p><a class="button dark" href="{{ site.google_form_url | escape }}">Open the form ↗</a>{% else %}<p>Create a Google Form, then add its public URL to <code>google_form_url</code> in <code>_config.yml</code>. Add its embed URL to <code>google_form_embed_url</code> to show it here.</p>{% endif %}</div></div>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#25231f">
+{% seo %}
+{% if site.google_site_verification != "" %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.google_analytics_id != "" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id | escape }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.google_analytics_id | escape }}');</script>
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"><link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="{{ '/' | relative_url }}"><span class="monogram">N<span>&amp;</span>C</span><span>NOOR <small>&amp; CO.</small></span></a>
+<input id="nav-toggle" class="nav-toggle" type="checkbox"><label for="nav-toggle" class="hamb"><span></span><span></span></label>
+<nav><a href="{{ '/products/' | relative_url }}">Products</a><a href="{{ '/manufacturing/' | relative_url }}">Manufacturing</a><a href="{{ '/about/' | relative_url }}">Our story</a><a href="{{ '/blog/' | relative_url }}">Journal</a><a class="navbutton" href="{{ '/contact/' | relative_url }}">Enquire ↗</a></nav></header>
+<main id="main">{{ content }}</main>
+<footer><div class="foot-top"><a class="brand" href="{{ '/' | relative_url }}"><span class="monogram">N<span>&amp;</span>C</span><span>NOOR <small>&amp; CO.</small></span></a><p>Leather goods and manufacturing enquiries<br>Srinagar, Jammu &amp; Kashmir, India</p><a href="{{ '/contact/' | relative_url }}">Start a conversation ↗</a></div><div class="foot-bottom"><span>© {{ site.time | date: "%Y" }} Noor &amp; Co.</span><a href="{{ '/privacy/' | relative_url }}">Privacy</a></div></footer>
+{% if site.whatsapp_number != "" %}<a class="whatsapp" href="https://wa.me/{{ site.whatsapp_number | escape }}?text=Hello%20Noor%20%26%20Co.%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>{% endif %}
+</body></html>

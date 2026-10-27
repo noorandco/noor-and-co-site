@@ -1,0 +1,10 @@
+---
+layout: page
+title: "Leather Journal"
+heading: "Notes on leather and making."
+kicker: "THE JOURNAL"
+description: "Practical articles about leather jackets, product development and sourcing leather goods."
+intro: "Useful reading for people exploring leather products, product development and manufacturing."
+permalink: /blog/
+---
+<div class="bloglist">{% for post in site.posts %}<article><p class="eyebrow">{{ post.date | date: "%d %b %Y" }}</p><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 220 }}</p><a href="{{ post.url | relative_url }}">Read article ↗</a></article>{% else %}<p>Our first articles are being prepared. Please check back soon.</p>{% endfor %}</div>
